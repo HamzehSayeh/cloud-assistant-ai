@@ -35,6 +35,6 @@ A serverless conversational AI web application built with **AWS Amplify**, **Ama
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-org/cloud-assistant-ai.git
+git clone https://github.com/HamzehSayeh/cloud-assistant-ai.git
 cd cloud-assistant-ai
 ```
