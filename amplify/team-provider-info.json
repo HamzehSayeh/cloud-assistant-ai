@@ -1,0 +1,28 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cloudassistantai-dev-08bc3-authRole",
+      "UnauthRoleArn": "arn:aws:iam::389412936116:role/amplify-cloudassistantai-dev-08bc3-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::389412936116:role/amplify-cloudassistantai-dev-08bc3-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cloudassistantai-dev-08bc3-deployment",
+      "UnauthRoleName": "amplify-cloudassistantai-dev-08bc3-unauthRole",
+      "StackName": "amplify-cloudassistantai-dev-08bc3",
+      "StackId": "arn:aws:cloudformation:us-east-1:389412936116:stack/amplify-cloudassistantai-dev-08bc3/fcc22960-3279-11f0-9d6b-1221ba9bd20b",
+      "AmplifyAppId": "dyltewl6cxwyb",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-cloudassistantai-dev-08bc3-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "cloudassistantai90b3d31f": {}
+      },
+      "function": {
+        "cloudassistantai90b3d31fPostConfirmation": {
+          "GROUP": "dev",
+          "deploymentBucketName": "amplify-cloudassistantai-dev-08bc3-deployment",
+          "s3Key": "amplify-builds/cloudassistantai90b3d31fPostConfirmation-2f47325a504871627947-build.zip"
+        }
+      }
+    }
+  }
+}

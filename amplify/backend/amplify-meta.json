@@ -1,0 +1,99 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cloudassistantai-dev-08bc3-authRole",
+      "UnauthRoleArn": "arn:aws:iam::389412936116:role/amplify-cloudassistantai-dev-08bc3-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::389412936116:role/amplify-cloudassistantai-dev-08bc3-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cloudassistantai-dev-08bc3-deployment",
+      "UnauthRoleName": "amplify-cloudassistantai-dev-08bc3-unauthRole",
+      "StackName": "amplify-cloudassistantai-dev-08bc3",
+      "StackId": "arn:aws:cloudformation:us-east-1:389412936116:stack/amplify-cloudassistantai-dev-08bc3/fcc22960-3279-11f0-9d6b-1221ba9bd20b",
+      "AmplifyAppId": "dyltewl6cxwyb",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-cloudassistantai-dev-08bc3-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    }
+  },
+  "auth": {
+    "cloudassistantai90b3d31f": {
+      "customAuth": false,
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "cloudassistantai90b3d31fPostConfirmation",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        }
+      ],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_NUMBERS"
+          ]
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "us-east-1_ux9VxT4Ir",
+        "AppClientIDWeb": "1qumf473okg99j3njmr67a8j4d",
+        "AppClientID": "6524kpfouca0n4uled2shcakkr",
+        "IdentityPoolId": "us-east-1:bdacdcb2-9096-4532-b4ae-3b799f4a781b",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:389412936116:userpool/us-east-1_ux9VxT4Ir",
+        "IdentityPoolName": "cloudassistantai90b3d31f_identitypool_90b3d31f__dev",
+        "UserPoolName": "cloudassistantai90b3d31f_userpool_90b3d31f"
+      },
+      "lastPushTimeStamp": "2025-05-16T18:38:55.064Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudassistantai-dev-08bc3-deployment/amplify-cfn-templates/auth/cloudassistantai90b3d31f-cloudformation-template.json",
+        "logicalId": "authcloudassistantai90b3d31f"
+      },
+      "lastPushDirHash": "+bO2E9qAyH8A0fl6LZsbAwr3ZSk="
+    }
+  },
+  "function": {
+    "cloudassistantai90b3d31fPostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2025-05-16T18:36:13.690Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2025-05-16T18:36:13.733Z",
+      "distZipFilename": "cloudassistantai90b3d31fPostConfirmation-2f47325a504871627947-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-cloudassistantai-dev-08bc3-deployment",
+        "s3Key": "amplify-builds/cloudassistantai90b3d31fPostConfirmation-2f47325a504871627947-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cloudassistantai-dev-08bc3-deployment/amplify-cfn-templates/function/cloudassistantai90b3d31fPostConfirmation-cloudformation-template.json",
+        "logicalId": "functioncloudassistantai90b3d31fPostConfirmation"
+      },
+      "lastPushTimeStamp": "2025-05-16T18:38:55.064Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::389412936116:role/cloudassistantai90b3d31fPostConfirmation-dev",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:389412936116:function:cloudassistantai90b3d31fPostConfirmation-dev",
+        "Name": "cloudassistantai90b3d31fPostConfirmation-dev",
+        "LambdaExecutionRole": "cloudassistantai90b3d31fPostConfirmation-dev"
+      },
+      "lastPushDirHash": "OLg+fwl2mbGZmkVeR89KjY9ZFHw="
+    }
+  }
+}
